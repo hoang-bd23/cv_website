@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bùi Đức Hoàng - Cloud / DevOps Engineer. Experienced in AWS, GCP, Terraform, Ansible, Kubernetes, Docker, and CI/CD pipelines.">
+    <meta name="keywords" content="Cloud Engineer, DevOps, AWS, GCP, Terraform, Ansible, Kubernetes, CI/CD, Bùi Đức Hoàng">
+    <meta name="author" content="Bùi Đức Hoàng">
+    <title>Bùi Đức Hoàng — Cloud / DevOps Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Status Beam -->
+    <div class="status-beam" id="statusBeam"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-glass" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">BĐH</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#certifications" class="nav-link" data-section="certifications">Certs</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#certifications" class="mobile-link">Certifications</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-glow"></div>
+                <img src="avatar.png" alt="Bùi Đức Hoàng" class="hero-avatar" id="heroAvatar">
+                <div class="avatar-ring"></div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="terminal-prompt">~/hoang $</span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor-blink">_</span>
+                </p>
+                <h1 class="hero-name">
+                    <span class="name-line">Bùi Đức</span>
+                    <span class="name-highlight">Hoàng</span>
+                </h1>
+                <h2 class="hero-role">Cloud / DevOps Engineer</h2>
+                <p class="hero-tagline">Building resilient infrastructure in the cloud cosmos</p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn-primary">
+                        <span>Get In Touch</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#projects" class="btn-secondary">
+                        View Projects<span class="terminal-cursor">_</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-paragraph">I aim to apply and further develop my professional skills by contributing to <span class="text-accent">large-scale projects</span> and building systems that address practical challenges in the <span class="text-accent-secondary">DevOps field</span>.</p>
+                    <p class="about-paragraph">Oriented toward gaining real-world experience, I specialize in cloud infrastructure, automation, and continuous delivery — creating <span class="text-accent-tertiary">resilient, scalable systems</span> that power modern applications.</p>
+                </div>
+                <div class="about-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Education</span>
+                            <span class="info-value">Hanoi University of Science and Technology</span>
+                            <span class="info-detail">Electronics & Telecommunications • B.Eng</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Hà Nội, Việt Nam</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Email</span>
+                            <span class="info-value mono">hoangbd.work@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Knowledge & Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Cloud -->
+                <div class="skill-card" data-category="cloud">
+                    <div class="skill-card-header">
+                        <div class="skill-icon cloud-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                        </div>
+                        <h3 class="skill-title">Cloud</h3>
+                        <div class="skill-pulse"></div>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Working experience with AWS and GCP</li>
+                        <li><span class="skill-dot"></span>Networking, computing, routing & firewall management</li>
+                        <li><span class="skill-dot"></span>Set up landing zones on GCP</li>
+                        <li><span class="skill-dot"></span>Migration between GCP and Azure</li>
+                        <li><span class="skill-dot"></span>AI chat integration using Vertex AI</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-card-header">
+                        <div class="skill-icon devops-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                        </div>
+                        <h3 class="skill-title">DevOps</h3>
+                        <div class="skill-pulse"></div>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Infrastructure provisioning with Terraform</li>
+                        <li><span class="skill-dot"></span>Configuration management with Ansible</li>
+                        <li><span class="skill-dot"></span>Proficient with Linux/Ubuntu</li>
+                        <li><span class="skill-dot"></span>Kubernetes & Docker</li>
+                        <li><span class="skill-dot"></span>Git and CI/CD pipelines</li>
+                        <li><span class="skill-dot"></span>Automation with Bash & Python</li>
+                    </ul>
+                </div>
+
+                <!-- Network -->
+                <div class="skill-card" data-category="network">
+                    <div class="skill-card-header">
+                        <div class="skill-icon network-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+                        </div>
+                        <h3 class="skill-title">Network</h3>
+                        <div class="skill-pulse"></div>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>CCNA fundamentals knowledge</li>
+                        <li><span class="skill-dot"></span>Network modeling with Cisco Packet Tracer</li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card" data-category="soft">
+                    <div class="skill-card-header">
+                        <div class="skill-icon soft-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3 class="skill-title">Soft Skills</h3>
+                        <div class="skill-pulse"></div>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Strong logical thinking & quick problem-solving</li>
+                        <li><span class="skill-dot"></span>Technical documentation in English</li>
+                        <li><span class="skill-dot"></span>Effective teamwork under pressure</li>
+                        <li><span class="skill-dot"></span>AI-optimized workflows</li>
+                        <li><span class="skill-dot"></span>Writing handouts & runbooks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tech Stack Visual -->
+            <div class="tech-stack">
+                <h3 class="tech-stack-title">Tech Stack</h3>
+                <div class="tech-pills">
+                    <span class="tech-pill pill-primary">AWS</span>
+                    <span class="tech-pill pill-primary">GCP</span>
+                    <span class="tech-pill pill-primary">Azure</span>
+                    <span class="tech-pill pill-secondary">Terraform</span>
+                    <span class="tech-pill pill-secondary">Ansible</span>
+                    <span class="tech-pill pill-tertiary">Kubernetes</span>
+                    <span class="tech-pill pill-tertiary">Docker</span>
+                    <span class="tech-pill pill-secondary">Linux</span>
+                    <span class="tech-pill pill-primary">Vertex AI</span>
+                    <span class="tech-pill pill-tertiary">Git</span>
+                    <span class="tech-pill pill-secondary">CI/CD</span>
+                    <span class="tech-pill pill-tertiary">Python</span>
+                    <span class="tech-pill pill-secondary">Bash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Jan — Apr 2026</span>
+                            <span class="timeline-badge badge-current">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Internship — CMC Telecom</h3>
+                        <p class="timeline-desc">Received in-depth training on <span class="mono text-accent">Google Cloud Platform (GCP)</span> in setting up landing zones, migrations, and Vertex AI.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Sep — Nov 2025</span>
+                        </div>
+                        <h3 class="timeline-title">Cloud Engineer — Seta-International</h3>
+                        <p class="timeline-desc">Built and configured infrastructure for projects on <span class="mono text-accent">AWS</span> and <span class="mono text-accent">GCP</span>. Ensured security and accuracy during product deployment to production.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Apr — Jul 2025</span>
+                        </div>
+                        <h3 class="timeline-title">Internship — Amigo Company</h3>
+                        <p class="timeline-desc">Learned foundational knowledge about Server, Network, Storage, Securing Server & Data, Disaster Recovery, and Troubleshooting. Studied VMware vSphere: Install, Configure, Manage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Projects & Research</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-icon-float">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="project-title">Web App for Document Uploading & Note-Taking</h3>
+                    <p class="project-platform">Amazon Web Services</p>
+                    <ul class="project-details">
+                        <li>Infrastructure provisioned and configured using <span class="mono">Terraform</span> and <span class="mono">Ansible</span></li>
+                        <li>Application deployed to the dev environment for functional testing</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span>AWS</span><span>Terraform</span><span>Ansible</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-icon-float">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                    </div>
+                    <h3 class="project-title">AI Chat System on GCP</h3>
+                    <p class="project-platform">Google Cloud Platform</p>
+                    <ul class="project-details">
+                        <li>Infrastructure provisioned with <span class="mono">Terraform</span> and <span class="mono">Ansible</span></li>
+                        <li>AI deployed using <span class="mono">Ray</span> on a <span class="mono">GKE</span> cluster</li>
+                        <li>RAG system for enhanced AI response quality</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span>GCP</span><span>GKE</span><span>Ray</span><span>RAG</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <div class="project-icon-float">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </div>
+                    <h3 class="project-title">PPE Violation Detection System</h3>
+                    <p class="project-platform">Edge Computing — Raspberry Pi</p>
+                    <ul class="project-details">
+                        <li>AI model to detect individuals not wearing safety helmets</li>
+                        <li>Deployed on <span class="mono">Raspberry Pi</span> with automated notifications</li>
+                        <li>Web & Telegram Bot alert system</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span>AI/ML</span><span>Raspberry Pi</span><span>Telegram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon cert-lang">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Languages</h4>
+                        <p>English <span class="cert-badge">B2</span> • Japanese <span class="cert-badge">N4</span></p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon cert-cisco">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>CCNA</h4>
+                        <p>Cisco Certified Network Associate</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon cert-google">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Google IT Support</h4>
+                        <p>Professional Certificate</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon cert-gcp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Google Cloud Associate</h4>
+                        <p>Learning Path Completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-subtitle">Interested in working together? Let's connect.</p>
+                <div class="contact-cards">
+                    <a href="mailto:hoangbd.work@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value mono">hoangbd.work@gmail.com</span>
+                    </a>
+                    <a href="tel:+84946436518" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value mono">0946 436 518</span>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <span class="contact-card-label">Location</span>
+                        <span class="contact-card-value">Hà Nội, Việt Nam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">
+                    <span class="logo-bracket">{</span>
+                    <span class="logo-text">BĐH</span>
+                    <span class="logo-bracket">}</span>
+                </span>
+                <span class="footer-copy">© 2026 Bùi Đức Hoàng</span>
+            </div>
+            <div class="footer-right">
+                <span class="footer-built mono">Built with passion & code<span class="cursor-blink">_</span></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
